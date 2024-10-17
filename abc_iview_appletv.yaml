@@ -12,8 +12,6 @@
 action: media_player.play_media
 data:
   media_content_type: url
-  media_content_id: iview://video/NS1413V001S00
+  media_content_id: iview://video/NS1413V001S00 # ABC news
 target:
   entity_id: media_player.appletv # Change to your Apple TV entity_id
-
-

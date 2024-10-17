@@ -1,0 +1,19 @@
+# Launch specific ABC Australia programs or channels on Apple TV
+#
+# Only works if the iview app is not currently in focus (can be open in background)
+# The url below launches the ABC News channel — great to quickly get your fix of genocide apologia
+# To get the URL for a specific program/channel, open iview in a browser, and grab the part of the URL that starts with '/video/'
+#
+# some other deeplinks:
+# ABC Kids: iview://video/LS1604H001S00
+# ABC Entertains: iview://video/LS1603H001S00
+# ABC TV (Victoria): iview://video/LS1807V001S00
+
+action: media_player.play_media
+data:
+  media_content_type: url
+  media_content_id: iview://video/NS1413V001S00
+target:
+  entity_id: media_player.appletv # Change to your Apple TV entity_id
+
+

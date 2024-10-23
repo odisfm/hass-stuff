@@ -1,0 +1,70 @@
+# adds additional entries to the webUI sidebar
+# put somewhere in your configuration.yaml
+# remove the ones you don't want, or hide them via:
+#   Your account (name in bottom-left) > 'Change the order and hide items from the sidebar'
+
+panel_custom:
+  - name: panel_automations
+    sidebar_title: Automations
+    sidebar_icon: mdi:robot
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/automation'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_integrations
+    sidebar_title: Integrations
+    sidebar_icon: mdi:chip
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/integrations'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_scripts
+    sidebar_title: Scripts
+    sidebar_icon: mdi:script
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/script'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_entities
+    sidebar_title: Entities
+    sidebar_icon: mdi:ghost
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/entities'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_devices
+    sidebar_title: Devices
+    sidebar_icon: mdi:devices
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/devices'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_helpers
+    sidebar_title: Helpers
+    sidebar_icon: mdi:handshake-outline
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/helpers'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_scenes
+    sidebar_title: Scenes
+    sidebar_icon: mdi:palette-advanced
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/scene'
+    require_admin: true
+    config:
+      ingress: core_configurator
+  - name: panel_blueprints
+    sidebar_title: Blueprints
+    sidebar_icon: mdi:drawing-box
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: 'config/blueprint'
+    require_admin: true
+    config:
+      ingress: core_configurator
